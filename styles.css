@@ -1,0 +1,881 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.container-first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, #d5dadf, #ffffff);
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Inverted Trapezium Header */
+.trapezium {
+    width: 30vw;
+    height: 50px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 0px;
+    clip-path: polygon(5% 100%, 95% 100%, 100% 0%, 0% 0%);
+    border-radius: 0px 0px 50px 50px;
+    box-shadow: 1px
+}
+
+.company-name {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+    padding: 10px 2vw;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.sign-up-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.sign-up-btn a {
+    border-radius: 50px;
+    background-color: rgb(51, 52, 53);
+    color: white;
+}
+
+.sign-btn {
+    padding: 1rem;
+}
+
+.lock-btn {
+    padding: 13px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100vw;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+}
+
+.mobile-nav.active {
+    display: flex;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-nav li {
+    margin: 1rem;
+}
+
+.mobile-nav a {
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 50;
+    opacity: 1;
+    font-size: 5rem;
+}
+
+
+.image-container {
+    position: relative;
+    bottom: 12rem;
+    left: 4vw;
+    width: 40vw;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.strip {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-container {
+    opacity: 0;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+    margin: 3vh;
+}
+
+.text-container h2 {
+    margin: 0;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.home-btn {
+    margin: 1vw 2vw 2vw 2vw;
+}
+
+.home-btn button {
+    padding: 1vw 2vw;
+    margin: 1vh;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: small;
+    border: none;
+    box-shadow: 5px
+}
+
+.btn1 {
+    background-color: black;
+    color: white;
+}
+
+.btn2 {
+    background-color: white;
+    color: black;
+}
+
+.side-features {
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+    width: 90vw;
+    position: absolute;
+    top: 70vh;
+    left: 5vw;
+}
+
+.side-features img {
+    width: 3vw;
+    height: 3vw;
+    object-fit: fill;
+    border-radius: 50%;
+    border: 2px solid rgb(241, 238, 238);
+}
+
+.side-features p {
+    width: 20vw;
+    text-align: justify;
+    text-indent: 2em;
+}
+
+.container-second {
+    height: 100vh;
+    margin: 10vh 10vw;
+}
+
+.image-three-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.pic1 {
+    position: relative;
+    bottom: 17vh;
+    width: 15vw;
+    border-radius: 50px;
+}
+
+.pic2 {
+    width: 25vw;
+    height: 70vh;
+    padding: 2vh;
+    border-radius: 50px;
+    background: linear-gradient(to bottom, rgb(68, 68, 68), #e0dcdc);
+    z-index: 50;
+}
+
+.pic2 img {
+    width: 25vw;
+    border-radius: 50px;
+}
+
+.pic3 {
+    position: relative;
+    top: 17vh;
+    width: 15vw;
+    border-radius: 50px;
+}
+
+.bg-text {
+    position: relative;
+    font-size: 15vw;
+    bottom: 65vh;
+    color: #999;
+}
+
+.note1 {
+    width: 20vw;
+    text-align: justify;
+    position: relative;
+    bottom: 60vh;
+    font-size: small;
+}
+
+.note2 {
+    width: 20vw;
+    text-align: justify;
+    position: relative;
+    bottom: 135vh;
+    left: 60vw;
+    font-size: small;
+}
+
+.container-third {
+    height: 100vh;
+    margin: 5vh 5vw;
+}
+
+.container-third h3 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: black;
+    margin: 0;
+    font-weight: normal;
+}
+
+.two-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+    margin: 2vw;
+}
+
+.two-sections div {
+    width: 37vw;
+    height: 70vh;
+    background: linear-gradient(to bottom, rgb(68, 68, 68), #e0dcdc);
+    border-radius: 20px;
+}
+
+.two-sections img {
+    width: 30vw;
+    height: 70vh;
+}
+
+.pic4 {
+    margin: 5vh;
+}
+
+.hidden {
+    display: none;
+}
+
+.pic5 {
+    margin: 5vh;
+}
+
+.button1 {
+    padding: 2vh 1vw;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: x-small;
+    left: 14vw;
+    bottom: -210vh;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.button2 {
+    padding: 2vh 1vw;
+    position: absolute;
+    background-color: transparent;
+    border: 1px solid rgb(70, 70, 70);
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: x-small;
+    left: 54vw;
+    bottom: -210vh;
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container2 {
+    margin: 0vh 6vw 0vh 6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.text-container2 p {
+    width: 20vw;
+    text-align: justify;
+    font-size: small;
+    color: gray;
+}
+
+.note3 {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    width: 15vw;
+    font-size: 1.8rem;
+    left: 14vw;
+    bottom: -185vh;
+}
+
+.note4 {
+    position: absolute;
+    text-transform: uppercase;
+    color: white;
+    width: 15vw;
+    font-size: 1.8rem;
+    right: 30vw;
+    bottom: -205vh;
+}
+
+
+.container-fourth {
+    height: 100vh;
+    margin: 5vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-container3 {
+    width: 25rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(68, 68, 68), #e0dcdc), url("Images/pic11.png");
+    z-index: 1;
+}
+
+.pic10 {
+    width: 20rem;
+
+}
+
+.note6 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #c2c2c2;
+    margin: 1rem;
+}
+
+.bg-text2 {
+    position: absolute;
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    top: 1rem;
+    left: 2rem;
+}
+
+.bg-text3 {
+    position: absolute;
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    top: 18rem;
+    left: 10rem;
+}
+
+.heading {
+    /* font-size: small; */
+    color: gray;
+    font-weight: 400;
+    font-size: small;
+}
+
+.container-fifth {
+    margin: 5vh 5vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.text-container4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    color: gray;
+    font-size: small;
+}
+
+.text-container4 h2 {
+    font-size: xx-large;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    row-gap: 10vh;
+}
+
+.product-item {
+    text-align: center;
+    border-radius: 50px;
+    position: relative;
+}
+
+.product-item img {
+    border-radius: 20px;
+    width: 20vw;
+}
+
+.product-details {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 18vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh;
+    margin: 2vh;
+}
+
+.product-details a {
+    cursor: pointer;
+}
+
+.product-heading p {
+    padding: 0;
+    margin: 0;
+    padding-left: 1vw;
+}
+
+.pic13 {
+    width: 20rem;
+
+}
+
+.container-sixth {
+    height: 100vh;
+    margin: 10vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-container5 {
+    width: 25rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(68, 68, 68), #e0dcdc), url("Images/pic11.png");
+    z-index: 1;
+}
+
+
+.bg-text5 {
+    position: absolute;
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    top: 18rem;
+    left: 5rem;
+}
+
+.bg-text6 {
+    position: absolute;
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    top: 2rem;
+    left: 5rem;
+}
+
+.note10 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #c2c2c2;
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        width: 2rem;
+        height: 2rem;
+        border: none;
+        background-color: transparent;
+    }
+
+    .hamburger i {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .image-container {
+        width: 90vw;
+        left: 13%;
+    }
+
+    .home-btn button {
+        padding: 1rem;
+
+    }
+
+    .container-first {
+        overflow: visible;
+    }
+
+    .text-container {
+        font-size: 1.2rem;
+        text-align: center;
+        margin: 3rem;
+    }
+
+    .side-features {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 0rem;
+        justify-content: space-between;
+
+        left: 13%;
+    }
+
+    .side-features p {
+        width: 90%;
+    }
+
+    .side-features img {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid black;
+    }
+
+    iframe {
+        width: 95vw;
+        height: 50vh;
+    }
+
+    .container-second,
+    .container-third,
+    .container-fourth {
+        margin: 5vh 2vw;
+    }
+
+    .container-second {
+        position: relative;
+    }
+
+    .image-three-display {
+        flex-direction: column;
+    }
+
+    .pic1 {
+        display: none;
+    }
+
+    .pic2 {
+        display: none;
+        width: 60vw;
+    }
+
+    .pic3 {
+        display: none;
+    }
+
+    .bg-text {
+        display: none;
+    }
+
+    .note1 {
+        position: absolute;
+        width: 80vw;
+        bottom: -10vh;
+        font-size: small;
+    }
+
+    .note2 {
+        width: 80vw;
+        bottom: -12vh;
+        left: 0vw;
+    }
+
+    h4 {
+        display: none;
+    }
+
+    .container-third h3 {
+        width: 100%;
+        margin-top: 20vh;
+        margin-bottom: 5vh;
+        text-align: center;
+    }
+
+    .two-sections {
+        flex-direction: column;
+    }
+
+    .two-sections div {
+        width: 100%;
+    }
+
+    .two-sections img {
+        width: 90vw;
+    }
+
+    .button1 {
+        left: 10vw;
+        bottom: -225vh;
+    }
+
+    .button2 {
+        left: 10vw;
+        bottom: -297vh;
+    }
+
+    .center {
+        width: 100%;
+    }
+
+    .text-container2 p {
+        width: 20vw;
+        text-align: justify;
+        font-size: small;
+    }
+
+    .note3 {
+        width: 50%;
+        left: 14vw;
+        bottom: -200vh;
+    }
+
+    .note4 {
+        width: 50%;
+        right: 10vw;
+        bottom: -290vh;
+    }
+
+    .note5 {
+        display: none;
+    }
+
+    .container-fourth {
+        flex-direction: column;
+    }
+
+    .text-container3 {
+        width: 90vw;
+        position: relative;
+        display: none;
+    }
+
+    .pic10 {
+        width: 20rem;
+    }
+
+    .bg-text2 {
+        top: 160rem;
+        left: 0rem;
+    }
+
+    .bg-text3 {
+        top: 170rem;
+        left: 15rem;
+    }
+
+
+    .container-fifth {
+        margin: 5vh 5vw;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .text-container4 {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .text-container4 h2 {
+        font-size: xx-large;
+        font-weight: 500;
+        color: black;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        row-gap: 10vh;
+    }
+
+    .product-item {
+        text-align: center;
+        border-radius: 50px;
+        position: relative;
+    }
+
+    .product-item img {
+        width: 90vw;
+    }
+
+    .product-details {
+        width: 80vw;
+        bottom: 2vh;
+        /* left: 15vw; */
+        justify-content: end;
+        padding: 1vh;
+        margin: 2vh;
+        background-color: white;
+    }
+
+    .product-details a {
+        cursor: pointer;
+    }
+
+    .product-heading p {
+        width: 90vw;
+        padding: 0;
+        margin: 0;
+        padding-left: 1vw;
+    }
+
+    .pic13 {
+        width: 20rem;
+
+    }
+
+
+    .bg-text5 {
+        position: absolute;
+        font-size: 7rem;
+        text-transform: uppercase;
+        color: #bdbdbd;
+        top: 18rem;
+        left: 5rem;
+    }
+
+    .bg-text6 {
+        position: absolute;
+        font-size: 7rem;
+        text-transform: uppercase;
+        color: #bdbdbd;
+        top: -10rem;
+        left: 5rem;
+    }
+
+    .note10 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        text-align: center;
+        color: #c2c2c2;
+        margin: 1rem;
+    }
+
+
+}
