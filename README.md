@@ -25,7 +25,6 @@ Live demo available at: [Vexo E-commerce](https://gpooja13.github.io/Vexo-Ecomme
 ## Screenshots
 - **Home Page**: Visually rich product showcase with smooth scrolling.
 - **Product Page**: Interactive product cards with hover animations.
-- **Checkout Page**: Simplified checkout process with animated transitions.
 
 ## Tech Stack
 - **Frontend**: JavaScript, HTML5, CSS3
