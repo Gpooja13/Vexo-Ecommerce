@@ -21,7 +21,7 @@ Live demo available at: [Vexo E-commerce](https://gpooja13.github.io/Vexo-Ecomme
 
 ## Screenshots
 - ![Home Page](https://res.cloudinary.com/cloudtrial/image/upload/v1743977807/vexo-ecommerce_wio3s3.png)
-- ![About Section]([https://example.com/image.png](https://res.cloudinary.com/cloudtrial/image/upload/v1743977807/Screenshot_2025-03-31_at_8.39.49_PM_qjvzsv.png))
+- ![About Section](https://res.cloudinary.com/cloudtrial/image/upload/v1743977807/Screenshot_2025-03-31_at_8.39.49_PM_qjvzsv.png)
 - ![Products Grid](https://res.cloudinary.com/cloudtrial/image/upload/v1743977807/Screenshot_2025-03-31_at_8.40.11_PM_hfqo4e.png)
 
 ## Tech Stack
