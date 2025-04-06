@@ -8,9 +8,6 @@ Vexo is a modern web experience designed to showcase e-commerce products with se
 - Demo
 - Screenshots
 - Tech Stack
-- Prerequisites
-- Setup Instructions
-- Contributing
 - Contact
 
 ## Features
@@ -23,8 +20,9 @@ Vexo is a modern web experience designed to showcase e-commerce products with se
 Live demo available at: [Vexo E-commerce](https://gpooja13.github.io/Vexo-Ecommerce/)
 
 ## Screenshots
-- **Home Page**: Visually rich product showcase with smooth scrolling.
-- **Product Page**: Interactive product cards with hover animations.
+- ![Home Page](https://res.cloudinary.com/cloudtrial/image/upload/v1743977807/vexo-ecommerce_wio3s3.png)
+- ![About Section]([https://example.com/image.png](https://res.cloudinary.com/cloudtrial/image/upload/v1743977807/Screenshot_2025-03-31_at_8.39.49_PM_qjvzsv.png))
+- ![Products Grid](https://res.cloudinary.com/cloudtrial/image/upload/v1743977807/Screenshot_2025-03-31_at_8.40.11_PM_hfqo4e.png)
 
 ## Tech Stack
 - **Frontend**: JavaScript, HTML5, CSS3
